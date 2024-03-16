@@ -1,0 +1,43 @@
+
+
+
+
+html{
+    box-sizing:border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+.contenedor{
+    padding-top:3rem;
+    width:95% ;
+    max-width: 120rem;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+
+}
+
+.gradiant{
+    height: 30rem;
+    width: 30rem;
+    
+    background: rgb(255,255,255);
+    background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(193,207,242,0.94) 54%, rgba(143,167,228,1) 77%, rgba(47,92,207,1) 100%);
+    border-radius: 50%;
+}
+
+.gradiant:hover{
+    height: 40rem;
+    width: 40rem;
+
+    background: rgb(255,255,255);
+    background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(216,225,246,0.94) 54%, rgba(184,200,241,1) 77%, rgba(80,119,218,1) 100%);
+
+    transition: all, ease-in-out, .5s;
+    transition: background-color,  .5s;
+}
