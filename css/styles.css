@@ -4,6 +4,7 @@
 
     --azul: #1b0085;
     --blanco: #FFFFFF;
+    --blancoSucio: #efece4;
     --negro: #010101;
     --negroClaro: #080808;
 
@@ -20,7 +21,7 @@ html{
 }
 
 body{
-    background: url(../img/Grunge-1383.jpg);
+    background: var(--blancoSucio);
     
    
     
