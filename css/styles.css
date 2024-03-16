@@ -72,6 +72,8 @@ h2{
 
 .imagen_cabezera{
     filter: drop-shadow(20px 20px 20px var(--negroClaro));
+    max-width:30rem;
+    max-height: 10rem;
 }
 .contenedor{
     padding-top:3rem;
