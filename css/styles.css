@@ -27,17 +27,30 @@ h1,h2,h3,p{
 }
 
 h1{
-    font-size:4rem;
+    font-size:3.5rem;
+}
+
+@media (min-width: 780px) {
+    h1{
+        font-size: 5rem;
+    }
 }
 
 h2{
-    font-size:3rem
+    font-size:2.7rem;
+    border-bottom: 2px solid var(--azul);
+    margin: 0 3rem; 
+    padding:  .7rem 0;
+    
 }
 
-.separador{
-    border: 10px, solid, var(--azul);
-    padding-bottom: 1rem;
+@media (min-width: 780px) {
+    h2{
+        font-size: 3.5rem;
+    }
 }
+
+
 
 
 .contenedor{
@@ -46,6 +59,7 @@ h2{
     max-width: 120rem;
     margin: 0 auto;
     display:flex;
+    align-items:center;
     justify-content:center;
 
 }
@@ -53,10 +67,15 @@ h2{
 .gradiant{
     height: 30rem;
     width: 30rem;
+    display:block;
+    justify-content:space-between;
     
     background: rgb(255,255,255);
     background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(193,207,242,0.94) 54%, rgba(143,167,228,1) 77%, rgba(47,92,207,1) 100%);
     border-radius: 5px;
+    padding-top: 7rem;
+    
+    
 }
 @media (min-width:468px ) {
     .gradiant{
@@ -79,6 +98,7 @@ h2{
     .gradiant{
         height: 45rem;
         width: 45rem;
+        padding-top: 12rem;
     }
 
     .gradiant:hover{
@@ -87,15 +107,4 @@ h2{
     }
 }
 
-@media (min-width: 992px) {
-    .gradiant{
-        height: 65rem;
-        width: 65rem;
-    }
-
-    .gradiant:hover{
-        height: 75rem;
-        width: 75rem;
-    }
-}
 
