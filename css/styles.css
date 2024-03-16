@@ -19,6 +19,13 @@ html{
     box-sizing: inherit;
 }
 
+body{
+    background: url(../img/Grunge-1383.jpg);
+    
+   
+    
+}
+
 h1,h2,h3,p{
     font-family: var(--fuente);
     text-align:center;
@@ -53,6 +60,18 @@ h2{
 
 
 
+
+.header{
+    padding-top:3rem;
+    width:95% ;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align:center;
+}
+
+.imagen_cabezera{
+    filter: drop-shadow(20px 20px 20px var(--negroClaro));
+}
 .contenedor{
     padding-top:3rem;
     width:95% ;
@@ -63,48 +82,67 @@ h2{
     justify-content:center;
 
 }
-
-.gradiant{
+.grande{
     height: 30rem;
     width: 30rem;
+    border-radius: 5px;
+    padding-top: 7rem;
     display:block;
     justify-content:space-between;
+    -webkit-box-shadow: 40px 40px 40px -12px rgba(0,0,0,0.6);
+    -moz-box-shadow: 40px 40px 40px -12px rgba(0,0,0,0.6);
+    box-shadow: 40px 40px 40px -12px rgba(0,0,0,0.6);
+}
+
+@media (min-width:468px ) {
+    .grande{
+        border-radius: 50%; 
+        height: 40rem;
+        width: 40rem;       
+    }
+
+    .grande:hover{
+        height: 45rem;
+        width: 45rem; 
+        transition: all, ease-in-out, .5s;
+    }
+}
+
+@media (min-width:780px ) {
+    .grande{ 
+        height: 50rem;
+        width: 50rem;       
+        padding-top: 12rem;  
+    }
+
+    .grande:hover{
+        height: 55rem;
+        width: 55rem; 
+
+        transition: all, ease-in-out, .5s;
+    }
+}
+
+
+
+.gradiant{
     
     background: rgb(255,255,255);
     background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(193,207,242,0.94) 54%, rgba(143,167,228,1) 77%, rgba(47,92,207,1) 100%);
-    border-radius: 5px;
-    padding-top: 7rem;
+    
     
     
 }
 @media (min-width:468px ) {
-    .gradiant{
-        border-radius: 50%; 
-    }
 
-    .gradiant:hover{
-        height: 40rem;
-        width: 40rem;
-    
+    .gradiant:hover{   
         background: rgb(255,255,255);
-        background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(216,225,246,0.94) 54%, rgba(184,200,241,1) 77%, rgba(80,119,218,1) 100%);
-    
+        background: linear-gradient(156deg, rgba(255,255,255,1) 0%, rgba(216,225,246,0.94) 54%, rgba(184,200,241,1) 77%, rgba(80,119,218,1) 100%);    
         transition: all, ease-in-out, .5s;
-        transition: background, ease-in, .5s;
+        
     }
 }
 
-@media (min-width: 780px) {
-    .gradiant{
-        height: 45rem;
-        width: 45rem;
-        padding-top: 12rem;
-    }
 
-    .gradiant:hover{
-        height: 55rem;
-        width: 55rem;
-    }
-}
 
 
