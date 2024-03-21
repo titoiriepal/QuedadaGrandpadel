@@ -74,6 +74,7 @@ h2{
     filter: drop-shadow(20px 20px 20px var(--negroClaro));
     max-width:30rem;
     max-height: 10rem;
+    
 }
 .contenedor{
     padding-top:3rem;
@@ -228,6 +229,45 @@ h2{
     .pequeno:hover{
         height: 35rem;
         width: 35rem;
+    }
+}
+@media (min-width:1100px ) {
+    .grande{ 
+        height: 60rem;
+        width: 60rem;       
+        padding-top: 12rem;  
+    }
+
+    .mediano{
+        margin-top:-30rem ;
+        padding-top: 8rem;
+        height: 45rem;
+        width: 45rem;  
+    }
+
+    .pequeno{
+        margin-top:-50rem;
+        padding-top: 8rem;
+        height: 40rem;
+        width: 40rem;  
+        z-index: 0;
+    }
+
+    .grande:hover{
+        height: 65rem;
+        width: 65rem; 
+        z-index: 1;
+        transition: all, ease-in-out, .5s;
+    }
+
+    .mediano:hover{
+        height: 50rem;
+        width: 50rem;
+    }
+
+    .pequeno:hover{
+        height: 45rem;
+        width: 45rem;
     }
 }
 
